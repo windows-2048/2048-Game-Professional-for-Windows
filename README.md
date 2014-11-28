@@ -11,6 +11,9 @@ This is just 1 of 2048 other games we plan to port to Windows. Our games include
 - Free from advertising forever for loyal users
 - Monthly money prizes for top 10 game winners (coming soon, but you can start to grow scores right now due to our already built-in anti-cheat protection).
 
-Visit our site for more explanation:
+If you want to download latest version from github here, go to 'releases' or click:
+https://github.com/windows-2048/2048.exe-Windows-PC-Desktop-Game/releases/download/v0.99/2048_v_0_9_9_install.exe
+
+Or visit our site for more explanation & download:
 https://win-2048.org (mirror 1)
 https://windows-2048.com (mirror 2).
