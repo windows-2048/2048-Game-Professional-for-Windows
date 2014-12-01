@@ -1,0 +1,140 @@
+*
+{
+    font-size: 16px;
+}
+
+QMainWindow
+{
+    background-color: DimGray;
+    /*border-image: url(:/MainWindow/Resources/bg.jpg) 0 0 0 0 stretch stretch;
+    border-width: 0px;*/
+}
+
+QMenuBar
+{
+    background-color: #555;
+}
+
+QMenuBar::item
+{
+    background-color: #555;
+    color: #e0e0e0;
+}
+
+QMenuBar::item:selected
+{
+    background-color: #444;
+    color: White;
+}
+
+QMenu
+{
+    background-color: #555;
+    border: 0px;
+}
+
+QMenu::item
+{
+    background-color: #555;
+    color: #e0e0e0;
+}
+
+QMenu::item:selected
+{
+    background-color: #444;
+    color: White;
+}
+
+QMenu::separator
+{
+    background-color: DimGray;
+    height: 1px;
+}
+
+QMessageBox
+{
+    background-color: Gray;
+}
+
+QMessageBox QFrame
+{
+    border: 0px;
+}
+
+QLabel
+{
+    background-color: transparent;
+    color: White;
+}
+
+QLabel#tinyHelp
+{
+    font-size: 12px;
+}
+
+QLabel#score
+{
+    font-size: 14px;
+    font-style: italic;
+    color: Silver;
+}
+
+QLabel#best
+{
+    font-size: 14px;
+    font-style: italic;
+    color: Silver;
+}
+
+QLineEdit
+{
+    background-color: Silver;
+    border: 0px transparent White;
+    border-radius: 4;
+    font-weight: bold;
+}
+
+QLineEdit#score
+{
+    color: ForestGreen;
+}
+
+QLineEdit#best
+{
+    color: Brown;
+}
+
+QStatusBar
+{
+    color: White;
+    font-size: 10px;
+}
+
+QPushButton
+{
+    background-color: #555;
+    border: 0px;
+    border-radius: 4;
+    color: #e0e0e0;
+    padding: 6px;
+}
+
+QPushButton:hover
+{
+    background-color: #444;
+    color: White;
+}
+
+QScrollBar
+{
+    background-color: #555;
+    border: 0px;
+}
+
+QTextEdit
+{
+    border: 0px;
+    border-radius: 4px;
+    background-color: White;
+    color: Black;
+}

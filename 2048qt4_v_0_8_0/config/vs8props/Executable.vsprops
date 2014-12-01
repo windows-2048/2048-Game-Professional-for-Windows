@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<VisualStudioPropertySheet
+	ProjectType="Visual C++"
+	Version="8.00"
+	Name="Execulable"
+	OutputDirectory="$(SolutionDir)/bin/$(ConfigurationName)/$(PlatformName)"
+	InheritedPropertySheets="$(SolutionDir)/config/vs8props/Base.vsprops"
+	>
+	<Tool
+		Name="VCLinkerTool"
+		OutputFile="$(OutDir)/$(ProjectName).exe"
+		AdditionalDependencies="winmm.lib ws2_32.lib imm32.lib"
+	/>
+	<Tool
+		Name="VCCLCompilerTool"
+		ProgramDataBaseFileName="$(OutDir)/$(ProjectName).pdb"
+	/>
+</VisualStudioPropertySheet>

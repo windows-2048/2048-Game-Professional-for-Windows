@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<VisualStudioPropertySheet
+	ProjectType="Visual C++"
+	Version="8.00"
+	Name="Library"
+	OutputDirectory="$(SolutionDir)/lib/$(ConfigurationName)/$(PlatformName)"
+	InheritedPropertySheets="$(SolutionDir)/config/vs8props/Base.vsprops"
+	>
+	<Tool
+		Name="VCLibrarianTool"
+		OutputFile="$(OutDir)/$(ProjectName).$(ConfigurationName).lib"
+		IgnoreAllDefaultLibraries="true"
+		AdditionalLibraryDirectories=";&quot;$(SolutionDir)/lib/$(PlatformName)&quot;"
+	/>
+	<Tool
+		Name="VCCLCompilerTool"
+		ProgramDataBaseFileName="$(SolutionDir)/bin/$(ConfigurationName)/$(PlatformName)/$(ProjectName).$(ConfigurationName).pdb"
+	/>
+</VisualStudioPropertySheet>

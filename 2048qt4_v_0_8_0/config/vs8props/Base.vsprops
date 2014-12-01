@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<VisualStudioPropertySheet
+	ProjectType="Visual C++"
+	Version="8.00"
+	Name="Base"
+	IntermediateDirectory="$(ConfigurationName)/$(PlatformName)"
+	InheritedPropertySheets="$(VCInstallDir)/VCProjectDefaults/UpgradeFromVC71.vsprops"
+	CharacterSet="1"
+	>
+	<Tool
+		Name="VCCLCompilerTool"
+		AdditionalIncludeDirectories="&quot;$(SolutionDir)/src&quot;"
+		WarningLevel="3"
+	/>
+	<Tool
+		Name="VCLinkerTool"
+		AdditionalLibraryDirectories="&quot;$(SolutionDir)/lib/$(ConfigurationName)/$(PlatformName)&quot;"
+	/>
+	<UserMacro
+		Name="QTDIR"
+		Value="$(SDK_PATH)/QT"
+		PerformEnvironmentSet="true"
+	/>
+</VisualStudioPropertySheet>

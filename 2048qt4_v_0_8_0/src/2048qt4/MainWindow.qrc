@@ -1,0 +1,16 @@
+<RCC>
+    <qresource prefix="/MainWindow">
+        <file>Resources/T2048_pink.png</file>
+        <file>Resources/client.css</file>
+        <file>Resources/splash.jpg</file>
+        <file>Resources/chat_250.png</file>
+        <file>Resources/help_128.png</file>
+        <file>Resources/win_300.png</file>
+        <file>Resources/lose_300.png</file>
+        <file>Resources/error.png</file>
+        <file>Resources/favicon_16.png</file>
+        <file>Resources/favicon_24.png</file>
+        <file>Resources/favicon_32.png</file>
+        <file>Resources/gpl-3.0.txt</file>
+    </qresource>
+</RCC>
