@@ -20,5 +20,3 @@ Or visit our site for more explanation & download:
 https://win-2048.org (mirror 1)
 
 https://windows-2048.com (mirror 2).
-
-\*\*\* Under construction now. Source code coming soon \*\*\*
