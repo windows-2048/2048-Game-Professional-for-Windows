@@ -1,5 +1,5 @@
-2048.exe-Windows-PC-Desktop-Game
-================================
+2048.exe-Windows-7-8-10-Download-PC-Desktop-Game
+================================================
 
 We have rewritten popular 2048 game from scratch to bring it to 'classic' Windows operating system, i.e. Windows PC Desktop executable.
 
