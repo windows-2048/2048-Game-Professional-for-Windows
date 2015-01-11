@@ -1,4 +1,4 @@
-Famous 2048 iPhone & Android Game Ported To Windows 7 8 10 PC Desktop With Love Free Download
+Award Winning 2048 Game Girls Edition For Windows Desktop Free Download
 =============================================================================================
 
 Two Thousand Forty Eight again?! No. As Italians says: 'Di Nuovo'. As you know, author of original 2048 iPhone/Android game is Italian guy, Gabriele Cirulli.
