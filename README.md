@@ -6,6 +6,4 @@ Enjoy! Newest version of this game includes mission to grow your own kitty to Gr
 
 Look for latest versions of our software at:
 
-https://windows-2048.com
-
-https://win-2048.org
+http://2048-windows-download.en.softonic.com/
