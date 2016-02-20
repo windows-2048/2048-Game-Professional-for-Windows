@@ -1,4 +1,4 @@
 Please use Microsoft Visual Studio 2008 to build this program: open the only *.sln file you find in subdirs of this project.
-This proram may be typically built using static version of Qt library v. 4.8.x.
-Please set environment varibles QTDIR & QTDIR_STATIC both pointing to Qt root dir.
-Note x64 builds are not tested!
+This program may be typically built using static version of Qt library v. 4.8.x.
+Please set environment variables QTDIR & QTDIR_STATIC both pointing to Qt root dir.
+Note: x64 builds are not tested!
