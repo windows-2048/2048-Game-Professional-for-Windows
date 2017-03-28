@@ -7,7 +7,6 @@
 #include <random>
 using namespace ::std::tr1;
 
-
 const int SIDE_LEN	= 64;
 const unsigned int DEFAULT_VALUE = 2;
 const unsigned int DEFAULT_VALUE4 = 4;
@@ -73,6 +72,7 @@ public:
 	QString serializeToString() const;
 	void deserializeFromString(const QString strImage);
 	int score() const;
+	int tile() const;
 	void setScore(int nScore);
 
 	struct Point2D

@@ -438,6 +438,22 @@ int GameAlgorithm::score() const
 	return int(m_nScore);
 }
 
+int GameAlgorithm::tile() const
+{
+	unsigned int nTile = 0;
+
+	for (int row = 0; row < m_nSideLen; row++)
+	{
+		for (int col = 0; col < m_nSideLen; col++)
+		{
+			if (m_board[row][col] > nTile)
+				nTile = (unsigned int)m_board[row][col];
+		}
+	}
+
+	return int(nTile);
+}
+
 void GameAlgorithm::setScore(int nScore)
 {
 	m_nScore = (unsigned int)nScore;

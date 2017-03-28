@@ -2,6 +2,7 @@
 
 #include "GameAlgorithm.h"
 
+#include <QPixmap>
 #include <QWidget>
 #include <QPaintEvent>
 
@@ -15,7 +16,7 @@ class GameField: public QWidget
 
 public:
 
-    explicit GameField(int nDim, int nSpacing = 4, QWidget* parent = 0, Qt::WindowFlags f = 0);
+    explicit GameField(int nDim, bool bGirlsColors = true, int nSpacing = 4, QWidget* parent = 0, Qt::WindowFlags f = 0);
     virtual ~GameField();
 
 public:
@@ -29,6 +30,9 @@ public slots:
 
 	void updateGame();
 	void newGame();
+	void setBestScore(int nScore);
+	void setBestTile(int nTile);
+	void setThemeGirls(bool);
 
 signals:
 
@@ -51,6 +55,8 @@ protected:
 	void timerAnimateNewPoints();
 	void timerAnimateWinLoss();
 	void paintRectAndValue(QPainter& qpainter, const QRectF& rectLabel, const QBrush& qbrush, const Board& board);
+	void paintScoreKitty(QPainter& qpainter, int nScore, int nTile, bool bBest);
+	int kittyIndexForTile(int nTile);
 
 private:
 
@@ -84,4 +90,10 @@ private:
 	QRectF m_rectLabelMerged[SIDE_LEN][SIDE_LEN];
 	QRectF m_rectLabelNew[SIDE_LEN][SIDE_LEN];
 	QBrush m_brushLabelMerged[SIDE_LEN][SIDE_LEN];
+
+	QList<QPixmap> m_kitties;
+
+	int m_nBestScore;
+	int m_nBestTile;
+	bool m_bGirlsColors;
 };

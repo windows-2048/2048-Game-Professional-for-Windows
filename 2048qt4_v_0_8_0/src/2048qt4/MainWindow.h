@@ -1,21 +1,25 @@
 #pragma once
 
-//#define VERSION_2048 80
-
 #include "ScoreBar.h"
 
 #include <QMainWindow>
 #include <QAction>
 #include <QCloseEvent>
+#include <QSettings>
 #include <QScopedPointer>
+#include <QProcess>
+#include <QThread>
+#include <QSharedMemory>
+
+#include "qxtglobalshortcut.h"
+
+#include "2048lib/utils.h"
 
 #include <exception>
 
 // Forward declarations
 
 class GameField;
-class QSplashScreen;
-class AnotherThreadStarter;
 
 
 class MainWindow : public QMainWindow
@@ -24,9 +28,8 @@ class MainWindow : public QMainWindow
 
 public:
 
-	MainWindow(QWidget *parent = 0, Qt::WFlags flags = 0);
+	MainWindow(QWidget *parent = 0, Qt::WindowFlags flags = Qt::WindowFlags());
 	virtual ~MainWindow();
-	void ctor();
 
 public:
 
@@ -39,22 +42,24 @@ protected slots:
     void onTriggered16x16(bool);
 	void onTriggeredNewGame();
 	void onTriggeredHelp();
-    void onTriggeredCheckUpdates();
 	void onTriggeredAbout();
     void onTriggeredExit();
+	void onTriggeredThemeGirls(bool);
+	void onTriggeredThemeClassic(bool);
 	void onFieldChanged(int nScore);
     void onShowWindowTopLevel();
 
 protected:
 
 	void closeEvent(QCloseEvent* pEvent); // We re-implement from Qt
-	void installGameApp();
-	void setupUIForGame(int nDim);
+	void setupUIForGame(int nDim, bool bGirls);
 	void saveGame();
     int spacingForDimention(int nDim);
+	void ctor();
 
 protected:
 
+	SettingsEx m_settings;
 	int m_nDim;
 
 private:
@@ -66,6 +71,11 @@ private:
     QAction* m_pAction16x16;
 	QAction* m_pActionNewGame;
 	QAction* m_pActionHelp;
-    QAction* m_pActionCheckUpdates;
 	QAction* m_pActionAbout;
+	QAction* m_pActionThemeGirls;
+	QAction* m_pActionThemeClassic;
+    QxtGlobalShortcut* m_pGlobalShortcutExit;
+    int m_nTimerId;
+	int m_nBestTile;
 };
+
