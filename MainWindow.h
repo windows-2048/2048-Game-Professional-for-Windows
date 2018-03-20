@@ -48,6 +48,7 @@ protected slots:
 	void onTriggeredThemeClassic(bool);
 	void onFieldChanged(int nScore);
     void onShowWindowTopLevel();
+	void tmUpd();
 
 protected:
 

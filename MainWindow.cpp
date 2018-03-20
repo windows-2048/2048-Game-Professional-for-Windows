@@ -1,3 +1,7 @@
+#define VERSION_2048 156
+
+/////////////////////////////////////////////////////////
+
 #include "MainWindow.h"
 
 #include "GameField.h"
@@ -20,8 +24,6 @@
 #include <cstdlib>
 
 /////////////////////////////////////////////////////////
-
-#define VERSION_2048 155
 
 const QString strStyleCSS = "<style>a:link { color: DeepSkyBlue; text-decoration: none; }</style>";
 
@@ -200,6 +202,12 @@ void MainWindow::closeEvent(QCloseEvent* pEvent)
 	pEvent->accept();
 }
 
+void MainWindow::tmUpd()
+{
+	m_pGameField->update();
+	m_pGameField->parentWidget()->update();
+}
+
 void MainWindow::saveGame()
 {
 	if (scoreBar()->scoreEdit()->text().toInt() > scoreBar()->bestEdit()->text().toInt())
@@ -210,7 +218,7 @@ void MainWindow::saveGame()
 
 	m_pGameField->setBestScore(scoreBar()->bestEdit()->text().toInt());
 	m_pGameField->setBestTile(m_nBestTile);
-	m_pGameField->update();
+	tmUpd();
 
 	m_settings.beginGroup("MainWindow");
 	m_settings.setValue("pAction4x4Checked", m_pAction4x4->isChecked());
@@ -310,6 +318,8 @@ void MainWindow::onTriggeredThemeGirls(bool)
 	m_pGameField->setThemeGirls(true);
 
 	saveGame();
+
+	QTimer::singleShot(100, this, SLOT(tmUpd()));
 }
 
 void MainWindow::onTriggeredThemeClassic(bool)
@@ -319,6 +329,8 @@ void MainWindow::onTriggeredThemeClassic(bool)
 	m_pGameField->setThemeGirls(false);
 
 	saveGame();
+
+	QTimer::singleShot(100, this, SLOT(tmUpd()));
 }
 
 void MainWindow::onTriggeredHelp()

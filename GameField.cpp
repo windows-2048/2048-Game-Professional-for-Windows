@@ -448,10 +448,10 @@ QBrush GameField::brushForValue(int val, const QRectF& rect)
 	qGrad.setCoordinateMode(QGradient::LogicalMode);
 	qGrad.setSpread(QGradient::PadSpread);
 
-	qGrad.setColorAt(0.00, color.darker(115));
-	qGrad.setColorAt(0.50, color);
-	qGrad.setColorAt(0.90, color.lighter(115));
-	qGrad.setColorAt(1.00, color.lighter(155));
+	qGrad.setColorAt(0.00, color.darker(110));
+	qGrad.setColorAt(0.40, color);
+	qGrad.setColorAt(0.90, color);
+	qGrad.setColorAt(1.00, color.darker(125));
 
 	QBrush qBrush(qGrad);
 
@@ -581,9 +581,9 @@ void GameField::paintEvent(QPaintEvent* pEvent)
 	qGradBg.setSpread(QGradient::PadSpread);
 
 	qGradBg.setColorAt(0.0, QColor("#555"));
-	qGradBg.setColorAt(0.5, QColor("#555"));
-	qGradBg.setColorAt(0.75, QColor("#444"));
-	qGradBg.setColorAt(1.0, QColor("#333"));
+	qGradBg.setColorAt(0.5, QColor("#444"));
+	qGradBg.setColorAt(0.75, QColor("#333"));
+	qGradBg.setColorAt(1.0, QColor("#111"));
 
 	QBrush qBrushBg(qGradBg);
 	qpainter.fillRect(0, 0, size().width(), size().height(), qBrushBg);
