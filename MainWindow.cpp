@@ -1,4 +1,4 @@
-#define VERSION_2048 157
+#define VERSION_2048 160
 
 /////////////////////////////////////////////////////////
 
@@ -31,7 +31,7 @@ const QString strStrategiesHttpM = "<a href='https://sourceforge.net/projects/ex
 const QString strHomeHttpM = "<a href='https://sourceforge.net/projects/exe-2048/'><b>https://sourceforge.net/projects/exe-2048/</b></a>";
 
 //const QString trCompanyName = MainWindow::tr("Win-2048");
-const QString trCompanyNameJuridical = MainWindow::tr("Open Source Developer Masha Novedad<br/>(twitter.com/WIN_2048_CLUB)"); // Do not add "." again
+const QString trCompanyNameJuridical = MainWindow::tr("Open Source Developer<br/>Masha Novedad<br/>(twitter.com/WIN_2048_CLUB)"); // Do not add "." again
 const QString trCompanyNameJuridicalUPPER = trCompanyNameJuridical; // Do not add "." again
 const QString trCompanyName = trCompanyNameJuridical;
 
@@ -426,8 +426,8 @@ void MainWindow::onTriggeredAbout()
     msgBox.setTextFormat(Qt::RichText);
     msgBox.addButton(QMessageBox::Close);
     msgBox.setWindowTitle(tr("About - 2048 Game Professional"));
-    msgBox.setText(tr("<font color='#fd97a2'><b>2048 Game Professional</b></font>,<br/>formerly <font color='#ac8691'><b>2048 Game Girls Choice With Kitties For Windows Desktop</b></font>,<br/>version <b>%1</b>,<br/>build %2 - %3.<br/><br/>Visit our&nbsp;site:<br/>%4.<br/><br/>Donate bitcoins to 1ENPhPJ1k8q3k2SWqieeNFdLG4Mp1zXFkc.<br/><br/>").arg(strVer).arg(__DATE__).arg(__TIME__).arg(strHomeM));
-    msgBox.setInformativeText("<small>" + tr("Copyright (c) 2016-2017 ") + trCompanyNameJuridicalUPPER + ".</small>");
+    msgBox.setText(tr("<font color='#fd97a2'><b>2048 Game Professional</b></font>,<br/>formerly <font color='#ac8691'><b>2048 Game Girls Choice With Kitties For Windows Desktop</b></font>,<br/>version <b>%1</b>,<br/>build %2 - %3.<br/><br/>Visit our&nbsp;site:<br/>%4").arg(strVer).arg(__DATE__).arg(__TIME__).arg(strHomeM));
+    msgBox.setInformativeText("<small>" + tr("Copyright (c) 2017-2018 ") + trCompanyNameJuridicalUPPER + ".</small>");
 
     QIcon icon;
 	icon.addFile(":/MainWindow/Resources/favicon_16.png", QSize(16, 16), QIcon::Normal, QIcon::Off);

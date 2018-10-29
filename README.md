@@ -8,3 +8,7 @@ This is a professional open source application for Windows. The 2048 puzzle incl
 Note 1. License has been changed to GPLv3.
 
 Note 2. Source code tree has been significantly reorganized since 2048 Game Professional for Windows version 1.4.x.
+
+Note 3. This is a source-only mirror. Download Windows binaries for various versions from the main (site)[https://sourceforge.net/projects/exe-2048/].
+
+For your convenience, the Windows installer for the latest version can be downloaded form (here)[https://dl.dropboxusercontent.com/s/s25tawhml10c7az/Setup_2048GameProfessional_1_6_0_0.exe].
