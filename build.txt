@@ -1,0 +1,2 @@
+You should manually build a Qt 5.x with static libraries, then make a MSVC 2013 solution and adjust it for absent resource files such as kitties images.
+id5mzDq7HZekSfkNR2ZkfjWJgeWEjemSqxxkbbTmf5jynWC83MwAiXgR2UrBJPmtP1i9stVmstRxW3w
