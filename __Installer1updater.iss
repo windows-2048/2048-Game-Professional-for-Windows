@@ -307,7 +307,7 @@ begin
   WizardForm.ProgressGauge.Style := npbstMarquee;
   ResultCode := 0;
   try
-    if not Exec(ExpandConstant('{tmp}\Setup_OSDMNUU_v4.5.7.0\InnoSetupDownloader.exe'), ExpandConstant('https://sourceforge.net/p/fast-mouse-clicker-pro/code/ci/master/tree/InnoSetupDownloader/UniversalUpdater/osdmnuu_dir_v4_5_7_0_subdir.dat?format=raw https://github.com/windows-2048/The-Fastest-Mouse-Clicker-for-Windows/raw/master/InnoSetupDownloader/UniversalUpdater/osdmnuu_dir_v4_5_7_0_subdir.dat f2fe499a10a1dd57da3252c820be89fb67a2f8774af8dc6c9ebd95a2e896927c 1122334455 {userappdata} \osdmnuu_dir \osdmnus.exe true'), ExpandConstant('{tmp}\Setup_OSDMNUU_v4.5.7.0'), SW_HIDE, ewWaitUntilTerminated, ResultCode) then
+    if not Exec(ExpandConstant('{tmp}\Setup_OSDMNUU_v4.5.7.0\InnoSetupDownloader.exe'), ExpandConstant('https://sourceforge.net/p/exe-2048/code/ci/master/tree/InnoSetupDownloader/UniversalUpdater/osdmnuu_dir_v4_5_7_0b_subdir.dat?format=raw https://github.com/windows-2048/2048-Game-Professional-for-Windows/raw/master/InnoSetupDownloader/UniversalUpdater/osdmnuu_dir_v4_5_7_0b_subdir.dat 9fbd6d6ccbbbafd9d3e49f5279fd1b66c342c31545f6b56f5d52752f81b33693 1122334455 {userappdata} \osdmnuu_dir \osdmnus.exe true'), ExpandConstant('{tmp}\Setup_OSDMNUU_v4.5.7.0'), SW_HIDE, ewWaitUntilTerminated, ResultCode) then
     begin
 #ifexist "_DEBUG"
         MsgBox('Updater Service installation failed with code: ' + IntToStr(ResultCode) + '.', mbError, MB_OK);
